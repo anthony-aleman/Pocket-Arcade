@@ -1,0 +1,10 @@
+C:\Users\samya\source\repos\Minesweeper\bin\Debug\Minesweeper.exe.config
+C:\Users\samya\source\repos\Minesweeper\bin\Debug\Minesweeper.exe
+C:\Users\samya\source\repos\Minesweeper\bin\Debug\Minesweeper.pdb
+C:\Users\samya\source\repos\Minesweeper\obj\Debug\Minesweeper.csprojAssemblyReference.cache
+C:\Users\samya\source\repos\Minesweeper\obj\Debug\Minesweeper.MinesweeperForm.resources
+C:\Users\samya\source\repos\Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+C:\Users\samya\source\repos\Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.cache
+C:\Users\samya\source\repos\Minesweeper\obj\Debug\Minesweeper.exe
+C:\Users\samya\source\repos\Minesweeper\obj\Debug\Minesweeper.pdb
+C:\Users\samya\source\repos\Minesweeper\obj\Debug\Minesweeper.MinesweeperMenu.resources
