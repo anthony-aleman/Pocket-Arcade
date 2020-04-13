@@ -98,7 +98,7 @@ namespace Minesweeper
             if (gameover)
                timer.Stop();
 
-            switch (btn_prop[x, y])
+            switch (btn_prop[x, y]) //breakdown of game properties
             {
                 case 0:
                     btn[x, y].BackgroundImage = Minesweeper.Properties.Resources.tile;
@@ -172,7 +172,7 @@ namespace Minesweeper
                         set_ButtonImage(i, j);
                     }
         }
-        void GameOver()
+        void GameOver() //declares when game is over
         {
         gameover = true;
         Discover_Map();
@@ -231,7 +231,7 @@ namespace Minesweeper
 
                 if (btn_prop[x, y] != -1 && !gameover)
                 {
-                  gameProgess.Value++; 
+                  gameProgress.Value++; 
                   score.Text = "Score" + gameProgress.Value.ToString(); 
                     Check_ClickWin();
                 }
@@ -240,7 +240,7 @@ namespace Minesweeper
             }
         }
 
-        int MinesAround (int x, int y)
+        int MinesAround (int x, int y) //determines mines
         {
             int score = 0;
             for (int i =0; i < 8; i++)
@@ -275,7 +275,7 @@ namespace Minesweeper
                 if ( btn_prop[x,y] != flag_value && flags > 0)
                 {
                     btn[x, y].BackgroundImageLayout = ImageLayout.Stretch;
-                    btn[x, y].BackgroundImageLayout =  Minesweeper.Properties.Resources.flag;
+                    btn[x, y].BackgroundImage =  Minesweeper.Properties.Resources.flag;
                     btn_prop[x, y] = flag_value;
                     flags--;
                     Check_FlagWin();
@@ -285,7 +285,7 @@ namespace Minesweeper
                 {
                     btn_prop[x, y] = saved_btn_prop[x, y];  
                     btn[x, y].BackgroundImageLayout = ImageLayout.Stretch;
-                    btn[x, y].BackgroundImageLayout = null;  
+                    btn[x, y].BackgroundImage = null;  
                     flags++;
                 }
                     remainingFlags.Text = "Flags: " + flags;  
@@ -367,6 +367,7 @@ namespace Minesweeper
             SetMapNumbers(width, height);
 
         }
+
         void TableMargins(int x, int y)
         {
             start_x = (this.Size.Width - (width + 2) * distance_between) / 2;

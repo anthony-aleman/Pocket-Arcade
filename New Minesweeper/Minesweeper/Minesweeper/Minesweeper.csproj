@@ -52,6 +52,7 @@
     <Compile Include="Game.Designer.cs">
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gamescreen.cs" />
     <Compile Include="Minesweepermenu.cs">
       <SubType>Form</SubType>
     </Compile>
