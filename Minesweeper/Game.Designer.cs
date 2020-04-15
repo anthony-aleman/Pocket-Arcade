@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.newgame = new System.Windows.Forms.Label();
-            this.difficulty = new System.Windows.Forms.Label();
-            this.dropdown = new System.Windows.Forms.PictureBox();
             this.loadgame = new System.Windows.Forms.PictureBox();
             this.diffpanel = new System.Windows.Forms.Panel();
             this.hardbtn = new System.Windows.Forms.Button();
@@ -42,48 +40,31 @@
             this.gameProgress = new System.Windows.Forms.ProgressBar();
             this.score = new System.Windows.Forms.Label();
             this.remainingFlags = new System.Windows.Forms.Label();
-            this.ButtonImage = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dropdown)).BeginInit();
+            this.difficulty = new System.Windows.Forms.ComboBox();
+            this.time = new System.Windows.Forms.Label();
+            this.minutesBox = new System.Windows.Forms.TextBox();
+            this.secondsBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.loadgame)).BeginInit();
             this.diffpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // newgame
             // 
             this.newgame.AutoSize = true;
             this.newgame.Font = new System.Drawing.Font("Vineta BT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newgame.Location = new System.Drawing.Point(486, 12);
+            this.newgame.Location = new System.Drawing.Point(471, 9);
             this.newgame.Name = "newgame";
             this.newgame.Size = new System.Drawing.Size(121, 19);
             this.newgame.TabIndex = 1;
             this.newgame.Text = "New game";
             // 
-            // difficulty
-            // 
-            this.difficulty.AutoSize = true;
-            this.difficulty.Font = new System.Drawing.Font("Vineta BT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.difficulty.Location = new System.Drawing.Point(237, 12);
-            this.difficulty.Name = "difficulty";
-            this.difficulty.Size = new System.Drawing.Size(194, 19);
-            this.difficulty.TabIndex = 2;
-            this.difficulty.Text = "Choose difficulty";
-            // 
-            // dropdown
-            // 
-            this.dropdown.BackColor = System.Drawing.SystemColors.Control;
-            this.dropdown.Image = global::Minesweeper.Properties.Resources.drop_down__triangle2;
-            this.dropdown.Location = new System.Drawing.Point(437, 12);
-            this.dropdown.Name = "dropdown";
-            this.dropdown.Size = new System.Drawing.Size(33, 19);
-            this.dropdown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.dropdown.TabIndex = 5;
-            this.dropdown.TabStop = false;
-            this.dropdown.Click += new System.EventHandler(this.dropdown_Click);
-            // 
             // loadgame
             // 
+            this.loadgame.BackColor = System.Drawing.Color.Transparent;
             this.loadgame.Image = global::Minesweeper.Properties.Resources.gamebutton;
-            this.loadgame.Location = new System.Drawing.Point(604, 5);
+            this.loadgame.Location = new System.Drawing.Point(598, 9);
             this.loadgame.Name = "loadgame";
             this.loadgame.Size = new System.Drawing.Size(41, 41);
             this.loadgame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,63 +109,106 @@
             this.medbtn.Text = "Medium";
             this.medbtn.UseVisualStyleBackColor = true;
             // 
-            // timer1
+            // timer
             // 
-            this.timer1.Interval = 20;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // gameProgress
             // 
-            this.gameProgress.Location = new System.Drawing.Point(51, 436);
+            this.gameProgress.Location = new System.Drawing.Point(84, 395);
+            this.gameProgress.MarqueeAnimationSpeed = 0;
             this.gameProgress.Name = "gameProgress";
             this.gameProgress.Size = new System.Drawing.Size(581, 23);
+            this.gameProgress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.gameProgress.TabIndex = 8;
             // 
             // score
             // 
             this.score.AutoSize = true;
+            this.score.Font = new System.Drawing.Font("Vineta BT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.score.Location = new System.Drawing.Point(12, 12);
             this.score.Name = "score";
-            this.score.Size = new System.Drawing.Size(49, 17);
+            this.score.Size = new System.Drawing.Size(76, 19);
             this.score.TabIndex = 9;
             this.score.Text = "Score:";
             // 
             // remainingFlags
             // 
             this.remainingFlags.AutoSize = true;
-            this.remainingFlags.Location = new System.Drawing.Point(15, 32);
+            this.remainingFlags.Font = new System.Drawing.Font("Vineta BT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remainingFlags.Location = new System.Drawing.Point(12, 33);
             this.remainingFlags.Name = "remainingFlags";
-            this.remainingFlags.Size = new System.Drawing.Size(50, 17);
+            this.remainingFlags.Size = new System.Drawing.Size(84, 19);
             this.remainingFlags.TabIndex = 10;
             this.remainingFlags.Text = "Flags: ";
             // 
-            // ButtonImage
+            // difficulty
             // 
-            this.ButtonImage.Location = new System.Drawing.Point(51, 77);
-            this.ButtonImage.Name = "ButtonImage";
-            this.ButtonImage.Size = new System.Drawing.Size(556, 247);
-            this.ButtonImage.TabIndex = 11;
+            this.difficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.difficulty.FormattingEnabled = true;
+            this.difficulty.Items.AddRange(new object[] {
+            "Easy ",
+            "Medium",
+            "Hard"});
+            this.difficulty.Location = new System.Drawing.Point(297, 9);
+            this.difficulty.Name = "difficulty";
+            this.difficulty.Size = new System.Drawing.Size(150, 24);
+            this.difficulty.TabIndex = 0;
+            this.difficulty.Text = "Choose difficulty";
+            // 
+            // time
+            // 
+            this.time.AutoSize = true;
+            this.time.Location = new System.Drawing.Point(209, 7);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(43, 17);
+            this.time.TabIndex = 12;
+            this.time.Text = "Time:";
+            // 
+            // minutesBox
+            // 
+            this.minutesBox.Location = new System.Drawing.Point(200, 27);
+            this.minutesBox.Name = "minutesBox";
+            this.minutesBox.Size = new System.Drawing.Size(24, 22);
+            this.minutesBox.TabIndex = 13;
+            // 
+            // secondsBox
+            // 
+            this.secondsBox.Location = new System.Drawing.Point(230, 28);
+            this.secondsBox.Name = "secondsBox";
+            this.secondsBox.Size = new System.Drawing.Size(24, 22);
+            this.secondsBox.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(84, 77);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(581, 240);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 517);
-            this.Controls.Add(this.ButtonImage);
+            this.ClientSize = new System.Drawing.Size(718, 517);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.secondsBox);
+            this.Controls.Add(this.minutesBox);
+            this.Controls.Add(this.time);
+            this.Controls.Add(this.difficulty);
             this.Controls.Add(this.remainingFlags);
             this.Controls.Add(this.score);
             this.Controls.Add(this.gameProgress);
             this.Controls.Add(this.diffpanel);
-            this.Controls.Add(this.dropdown);
-            this.Controls.Add(this.difficulty);
             this.Controls.Add(this.newgame);
             this.Controls.Add(this.loadgame);
             this.Name = "Game";
             this.Text = "Game";
-            ((System.ComponentModel.ISupportInitialize)(this.dropdown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadgame)).EndInit();
             this.diffpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,8 +218,6 @@
 
         private System.Windows.Forms.PictureBox loadgame;
         private System.Windows.Forms.Label newgame;
-        private System.Windows.Forms.Label difficulty;
-        private System.Windows.Forms.PictureBox dropdown;
         private System.Windows.Forms.Panel diffpanel;
         private System.Windows.Forms.Button hardbtn;
         private System.Windows.Forms.Button easybtn;
@@ -205,7 +227,11 @@
         private System.Windows.Forms.ProgressBar gameProgress;
         private System.Windows.Forms.Label score;
         private System.Windows.Forms.Label remainingFlags;
-        private System.Windows.Forms.Panel ButtonImage;
+        private System.Windows.Forms.ComboBox difficulty;
+        private System.Windows.Forms.Label time;
+        private System.Windows.Forms.TextBox minutesBox;
+        private System.Windows.Forms.TextBox secondsBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

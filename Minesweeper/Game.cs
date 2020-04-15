@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace Minesweeper
 {
+
+    /*************************************
+     Name: Program
+     Purpose: Run game
+     Notes: N/A
+     ************************************/
     public partial class Game : Form
     {
         Button[,] btn = new Button[41, 45];
@@ -19,6 +25,10 @@ namespace Minesweeper
 
         bool firstPlay = true;
         bool gameover = false;
+
+        //Time
+        int seconds = 0;
+        int minutes = 0;
 
         //points that are around
         int[] dx8 = { 1, 0, -1, 0, 1, -1, -1, 1 };
@@ -50,43 +60,10 @@ namespace Minesweeper
 
         private void loadgame_Click(object sender, EventArgs e)
         {
-            Application.Restart();
-            
-           //will make a new game
-            
+            Game newGame = new Game();
+            newGame.Show();
+            //will make a new game
         }
-
-        bool MenuIsOpen = false;
-        private void dropdown_Click(object sender, EventArgs e)
-        {
-            //show difficulty levels
-            timer1.Start();
-           
-        }
-
-        private void timer1_Tick(object sender, EventArgs e) // for difficulty menu
-        {
-            if (MenuIsOpen) //when the mini menu is open
-            {
-                diffpanel.Height -= 20;
-                if (diffpanel.Height == 0)
-                {
-                    timer1.Stop();
-                    MenuIsOpen = false;
-                }
-            }
-            else if (!MenuIsOpen)// when mini menu is closed
-            {
-                diffpanel.Height += 20;
-                if (diffpanel.Height == 88)
-                {
-                    timer1.Stop();
-                    MenuIsOpen = true;
-                }
-            }
-        }
-
-
         void set_ButtonImage(int x, int y) 
         {
             btn[x, y].Enabled = false;
@@ -308,6 +285,7 @@ namespace Minesweeper
                 }
         }
 
+
         void GenerateMap(int x, int y, int mines)
         {
             Random rand = new Random();
@@ -334,7 +312,21 @@ namespace Minesweeper
             }
         }
 
-        private void playgame (object sender, EventArgs e)
+        private void timer_Tick(object sender, EventArgs e) //counts time 
+        {
+            seconds++;
+
+            if (seconds == 60)
+            {
+                minutes++;
+                seconds = 0;
+            }
+
+            secondsBox.Text = seconds.ToString();
+            minutesBox.Text = minutes.ToString();
+        }
+
+        void StartGame() 
         {
             switch (difficulty.Text)
             {
