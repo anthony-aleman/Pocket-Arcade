@@ -16,5 +16,10 @@ namespace mainmainmenu
         {
             InitializeComponent();
         }
+
+        private void PacMan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -98,5 +98,104 @@
   <ItemGroup>
     <None Include="Resources\2-27687_purple-lightning-bolt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314-3148256_pixel-coin-png-super-mario-bros-3-coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coke prize.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost 95x95 test run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost final 2 55x55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost test run 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost_moving_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GhostTestRun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey ghost.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey_Ghost_moving_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey_Ghost_moving_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey_Ghost_moving_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maybe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pac man eating up.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pac man eating.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pac man hits ghost.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pac man main menu 450 100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pac man main menu.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pac man moving down.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pac man sprite sheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacman eating down.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacman eating left.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacman moving left.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacman moving right 55x55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacman moving right.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacman moving up.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Ghost_Left_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Ghost_Right_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scared Ghost 2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scared ghost.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

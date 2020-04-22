@@ -121,4 +121,103 @@
   <data name="lightning_bolt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2-27687_purple-lightning-bolt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="314-3148256_pixel-coin-png-super-mario-bros-3-coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\314-3148256_pixel-coin-png-super-mario-bros-3-coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Coke prize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Coke prize.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghost 95x95 test run" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ghost 95x95 test run.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghost final 2 55x55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ghost final 2 55x55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghost final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ghost final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghost test run 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ghost test run 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ghost.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghost_moving_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ghost_moving_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GhostTestRun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GhostTestRun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grey ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grey ghost.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grey_Ghost_moving_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grey_Ghost_moving_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grey_Ghost_moving_Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grey_Ghost_moving_Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grey_Ghost_moving_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grey_Ghost_moving_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maybe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maybe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pac man eating up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pac man eating up.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pac man eating" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pac man eating.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pac man hits ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pac man hits ghost.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pac man main menu 450 100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pac man main menu 450 100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pac man main menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pac man main menu.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pac man moving down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pac man moving down.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pac man sprite sheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pac man sprite sheet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pacman eating down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman eating down.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pacman eating left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman eating left.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pacman moving left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman moving left.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pacman moving right 55x55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman moving right 55x55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pacman moving right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman moving right.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pacman moving up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pacman moving up.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_Ghost_Left_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red_Ghost_Left_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_Ghost_Right_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red_Ghost_Right_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scared Ghost 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scared Ghost 2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scared ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scared ghost.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
