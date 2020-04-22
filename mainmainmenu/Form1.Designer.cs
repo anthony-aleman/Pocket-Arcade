@@ -31,10 +31,10 @@
             this.thunberbolt2 = new System.Windows.Forms.PictureBox();
             this.thunderbolt1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.exitbttn = new System.Windows.Forms.Button();
-            this.game1 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Exit_BTN = new System.Windows.Forms.Button();
+            this.Minesweeper_BTN = new System.Windows.Forms.Button();
+            this.Snake_BTN = new System.Windows.Forms.Button();
+            this.PacMan_BTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.thunberbolt2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thunderbolt1)).BeginInit();
             this.SuspendLayout();
@@ -73,53 +73,57 @@
             this.label1.Text = "Pocket Arcade";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // exitbttn
+            // Exit_BTN
             // 
-            this.exitbttn.BackColor = System.Drawing.Color.Orchid;
-            this.exitbttn.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitbttn.ForeColor = System.Drawing.Color.Blue;
-            this.exitbttn.Location = new System.Drawing.Point(356, 323);
-            this.exitbttn.Name = "exitbttn";
-            this.exitbttn.Size = new System.Drawing.Size(135, 38);
-            this.exitbttn.TabIndex = 11;
-            this.exitbttn.Text = "Exit";
-            this.exitbttn.UseVisualStyleBackColor = false;
+            this.Exit_BTN.BackColor = System.Drawing.Color.Orchid;
+            this.Exit_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_BTN.ForeColor = System.Drawing.Color.Blue;
+            this.Exit_BTN.Location = new System.Drawing.Point(356, 323);
+            this.Exit_BTN.Name = "Exit_BTN";
+            this.Exit_BTN.Size = new System.Drawing.Size(135, 38);
+            this.Exit_BTN.TabIndex = 11;
+            this.Exit_BTN.Text = "Exit";
+            this.Exit_BTN.UseVisualStyleBackColor = false;
+            this.Exit_BTN.Click += new System.EventHandler(this.Exit_BTN_Click);
             // 
-            // game1
+            // Minesweeper_BTN
             // 
-            this.game1.BackColor = System.Drawing.Color.Orchid;
-            this.game1.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.game1.ForeColor = System.Drawing.Color.Blue;
-            this.game1.Location = new System.Drawing.Point(265, 129);
-            this.game1.Name = "game1";
-            this.game1.Size = new System.Drawing.Size(318, 38);
-            this.game1.TabIndex = 12;
-            this.game1.Text = "Minesweeper";
-            this.game1.UseVisualStyleBackColor = false;
+            this.Minesweeper_BTN.BackColor = System.Drawing.Color.Orchid;
+            this.Minesweeper_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Minesweeper_BTN.ForeColor = System.Drawing.Color.Blue;
+            this.Minesweeper_BTN.Location = new System.Drawing.Point(265, 129);
+            this.Minesweeper_BTN.Name = "Minesweeper_BTN";
+            this.Minesweeper_BTN.Size = new System.Drawing.Size(318, 38);
+            this.Minesweeper_BTN.TabIndex = 12;
+            this.Minesweeper_BTN.Text = "Minesweeper";
+            this.Minesweeper_BTN.UseVisualStyleBackColor = false;
+            this.Minesweeper_BTN.Click += new System.EventHandler(this.Minesweeper_BTN_Click);
             // 
-            // button1
+            // Snake_BTN
             // 
-            this.button1.BackColor = System.Drawing.Color.Orchid;
-            this.button1.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(265, 189);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(318, 38);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Snake game";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Snake_BTN.BackColor = System.Drawing.Color.Orchid;
+            this.Snake_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Snake_BTN.ForeColor = System.Drawing.Color.Blue;
+            this.Snake_BTN.Location = new System.Drawing.Point(265, 189);
+            this.Snake_BTN.Name = "Snake_BTN";
+            this.Snake_BTN.Size = new System.Drawing.Size(318, 38);
+            this.Snake_BTN.TabIndex = 13;
+            this.Snake_BTN.Text = "Snake game";
+            this.Snake_BTN.UseVisualStyleBackColor = false;
+            this.Snake_BTN.Click += new System.EventHandler(this.Snake_BTN_Click);
             // 
-            // button2
+            // PacMan_BTN
             // 
-            this.button2.BackColor = System.Drawing.Color.Orchid;
-            this.button2.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Location = new System.Drawing.Point(265, 249);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(318, 38);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Pac Man";
-            this.button2.UseVisualStyleBackColor = false;
+            this.PacMan_BTN.BackColor = System.Drawing.Color.Orchid;
+            this.PacMan_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PacMan_BTN.ForeColor = System.Drawing.Color.Blue;
+            this.PacMan_BTN.Location = new System.Drawing.Point(265, 249);
+            this.PacMan_BTN.Name = "PacMan_BTN";
+            this.PacMan_BTN.Size = new System.Drawing.Size(318, 38);
+            this.PacMan_BTN.TabIndex = 14;
+            this.PacMan_BTN.Text = "Pac Man";
+            this.PacMan_BTN.UseVisualStyleBackColor = false;
+            this.PacMan_BTN.Click += new System.EventHandler(this.PacMan_BTN_Click);
             // 
             // PocketArcade
             // 
@@ -127,15 +131,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.game1);
-            this.Controls.Add(this.exitbttn);
+            this.Controls.Add(this.PacMan_BTN);
+            this.Controls.Add(this.Snake_BTN);
+            this.Controls.Add(this.Minesweeper_BTN);
+            this.Controls.Add(this.Exit_BTN);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.thunberbolt2);
             this.Controls.Add(this.thunderbolt1);
             this.Name = "PocketArcade";
             this.Text = "Pocket Arcade";
+            this.Load += new System.EventHandler(this.PocketArcade_Load);
+            this.Click += new System.EventHandler(this.PocketArcade_Click);
             ((System.ComponentModel.ISupportInitialize)(this.thunberbolt2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thunderbolt1)).EndInit();
             this.ResumeLayout(false);
@@ -147,10 +153,10 @@
         private System.Windows.Forms.PictureBox thunderbolt1;
         private System.Windows.Forms.PictureBox thunberbolt2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button exitbttn;
-        private System.Windows.Forms.Button game1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Exit_BTN;
+        private System.Windows.Forms.Button Minesweeper_BTN;
+        private System.Windows.Forms.Button Snake_BTN;
+        private System.Windows.Forms.Button PacMan_BTN;
     }
 }
 

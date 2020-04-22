@@ -7,3 +7,13 @@ C:\Users\samya\source\repos\mainmainmenu\obj\Debug\mainmainmenu.csproj.GenerateR
 C:\Users\samya\source\repos\mainmainmenu\obj\Debug\mainmainmenu.exe
 C:\Users\samya\source\repos\mainmainmenu\obj\Debug\mainmainmenu.pdb
 C:\Users\samya\source\repos\mainmainmenu\obj\Debug\mainmainmenu.PocketArcade.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\bin\Debug\mainmainmenu.exe.config
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\bin\Debug\mainmainmenu.exe
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\bin\Debug\mainmainmenu.pdb
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.csprojAssemblyReference.cache
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.PocketArcade.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.Properties.Resources.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.csproj.GenerateResource.cache
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.exe
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.pdb
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.PacMan.resources
