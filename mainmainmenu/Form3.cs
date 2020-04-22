@@ -21,5 +21,32 @@ namespace mainmainmenu
         {
 
         }
+
+        private void NewGame_BTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Options_BTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exit_BTN_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BTN_MouseEnter(object sender, EventArgs e)
+        {
+            var BTN = (Button)sender;
+            BTN.BackColor = Color.LightGray;
+        }
+
+        private void BTN_MouseLeave(object sender, EventArgs e)
+        {
+            var BTN = (Button)sender;
+            BTN.BackColor = Color.Black;
+        }
     }
 }

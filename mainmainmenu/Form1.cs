@@ -47,5 +47,17 @@ namespace mainmainmenu
         {
             Close();
         }
+
+        private void BTN_MouseEnter(object sender, EventArgs e)
+        {
+            var BTN = (Button)sender;
+            BTN.BackColor = Color.BlueViolet;
+        }
+
+        private void BTN_MouseLeave(object sender, EventArgs e)
+        {
+            var BTN = (Button)sender;
+            BTN.BackColor = Color.Orchid;
+        }
     }
 }

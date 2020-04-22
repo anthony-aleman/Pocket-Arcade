@@ -34,9 +34,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.NewGame_BTN = new System.Windows.Forms.Button();
+            this.Options_BTN = new System.Windows.Forms.Button();
+            this.Exit_BTN = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -107,41 +107,50 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // NewGame_BTN
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Emulogic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(338, 188);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 50);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "New Game";
-            this.button1.UseVisualStyleBackColor = false;
+            this.NewGame_BTN.BackColor = System.Drawing.Color.Black;
+            this.NewGame_BTN.Font = new System.Drawing.Font("Emulogic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewGame_BTN.ForeColor = System.Drawing.Color.Blue;
+            this.NewGame_BTN.Location = new System.Drawing.Point(325, 188);
+            this.NewGame_BTN.Name = "NewGame_BTN";
+            this.NewGame_BTN.Size = new System.Drawing.Size(150, 50);
+            this.NewGame_BTN.TabIndex = 7;
+            this.NewGame_BTN.Text = "New Game";
+            this.NewGame_BTN.UseVisualStyleBackColor = false;
+            this.NewGame_BTN.Click += new System.EventHandler(this.NewGame_BTN_Click);
+            this.NewGame_BTN.MouseEnter += new System.EventHandler(this.BTN_MouseEnter);
+            this.NewGame_BTN.MouseLeave += new System.EventHandler(this.BTN_MouseLeave);
             // 
-            // button2
+            // Options_BTN
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Emulogic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(338, 275);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 50);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Options";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Options_BTN.BackColor = System.Drawing.Color.Black;
+            this.Options_BTN.Font = new System.Drawing.Font("Emulogic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Options_BTN.ForeColor = System.Drawing.Color.Red;
+            this.Options_BTN.Location = new System.Drawing.Point(325, 275);
+            this.Options_BTN.Name = "Options_BTN";
+            this.Options_BTN.Size = new System.Drawing.Size(150, 50);
+            this.Options_BTN.TabIndex = 8;
+            this.Options_BTN.Text = "Options";
+            this.Options_BTN.UseVisualStyleBackColor = false;
+            this.Options_BTN.Click += new System.EventHandler(this.Options_BTN_Click);
+            this.Options_BTN.MouseEnter += new System.EventHandler(this.BTN_MouseEnter);
+            this.Options_BTN.MouseLeave += new System.EventHandler(this.BTN_MouseLeave);
             // 
-            // button3
+            // Exit_BTN
             // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.Font = new System.Drawing.Font("Emulogic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(338, 369);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 50);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Exit_BTN.BackColor = System.Drawing.Color.Black;
+            this.Exit_BTN.Font = new System.Drawing.Font("Emulogic", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_BTN.ForeColor = System.Drawing.Color.White;
+            this.Exit_BTN.Location = new System.Drawing.Point(325, 357);
+            this.Exit_BTN.Name = "Exit_BTN";
+            this.Exit_BTN.Size = new System.Drawing.Size(150, 50);
+            this.Exit_BTN.TabIndex = 9;
+            this.Exit_BTN.Text = "Exit";
+            this.Exit_BTN.UseVisualStyleBackColor = false;
+            this.Exit_BTN.Click += new System.EventHandler(this.Exit_BTN_Click);
+            this.Exit_BTN.MouseEnter += new System.EventHandler(this.BTN_MouseEnter);
+            this.Exit_BTN.MouseLeave += new System.EventHandler(this.BTN_MouseLeave);
             // 
             // pictureBox8
             // 
@@ -160,9 +169,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Exit_BTN);
+            this.Controls.Add(this.Options_BTN);
+            this.Controls.Add(this.NewGame_BTN);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -191,9 +200,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button NewGame_BTN;
+        private System.Windows.Forms.Button Options_BTN;
+        private System.Windows.Forms.Button Exit_BTN;
         private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

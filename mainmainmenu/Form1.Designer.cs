@@ -85,6 +85,8 @@
             this.Exit_BTN.Text = "Exit";
             this.Exit_BTN.UseVisualStyleBackColor = false;
             this.Exit_BTN.Click += new System.EventHandler(this.Exit_BTN_Click);
+            this.Exit_BTN.MouseEnter += new System.EventHandler(this.BTN_MouseEnter);
+            this.Exit_BTN.MouseLeave += new System.EventHandler(this.BTN_MouseLeave);
             // 
             // Minesweeper_BTN
             // 
@@ -98,6 +100,8 @@
             this.Minesweeper_BTN.Text = "Minesweeper";
             this.Minesweeper_BTN.UseVisualStyleBackColor = false;
             this.Minesweeper_BTN.Click += new System.EventHandler(this.Minesweeper_BTN_Click);
+            this.Minesweeper_BTN.MouseEnter += new System.EventHandler(this.BTN_MouseEnter);
+            this.Minesweeper_BTN.MouseLeave += new System.EventHandler(this.BTN_MouseLeave);
             // 
             // Snake_BTN
             // 
@@ -111,6 +115,8 @@
             this.Snake_BTN.Text = "Snake game";
             this.Snake_BTN.UseVisualStyleBackColor = false;
             this.Snake_BTN.Click += new System.EventHandler(this.Snake_BTN_Click);
+            this.Snake_BTN.MouseEnter += new System.EventHandler(this.BTN_MouseEnter);
+            this.Snake_BTN.MouseLeave += new System.EventHandler(this.BTN_MouseLeave);
             // 
             // PacMan_BTN
             // 
@@ -124,6 +130,8 @@
             this.PacMan_BTN.Text = "Pac Man";
             this.PacMan_BTN.UseVisualStyleBackColor = false;
             this.PacMan_BTN.Click += new System.EventHandler(this.PacMan_BTN_Click);
+            this.PacMan_BTN.MouseEnter += new System.EventHandler(this.BTN_MouseEnter);
+            this.PacMan_BTN.MouseLeave += new System.EventHandler(this.BTN_MouseLeave);
             // 
             // PocketArcade
             // 
