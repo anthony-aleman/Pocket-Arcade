@@ -29,12 +29,14 @@ namespace mainmainmenu
 
         private void Minesweeper_BTN_Click(object sender, EventArgs e)
         {
-
+            MinesweeperMenu msMenu = new MinesweeperMenu();
+            msMenu.Show();
         }
 
         private void Snake_BTN_Click(object sender, EventArgs e)
         {
-
+            SnakeGameMenu sgMenu = new SnakeGameMenu();
+            sgMenu.Show();
         }
 
         private void PacMan_BTN_Click(object sender, EventArgs e)
