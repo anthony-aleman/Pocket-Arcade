@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using System.IO;
 
 namespace mainmainmenu
 {
@@ -19,7 +21,10 @@ namespace mainmainmenu
 
         private void PacMan_Load(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < 10; i++)
+            {
+                PlayMusic();
+            }
         }
 
         private void NewGame_BTN_Click(object sender, EventArgs e)
@@ -49,6 +54,13 @@ namespace mainmainmenu
         {
             var BTN = (Button)sender;
             BTN.BackColor = Color.Black;
+        }
+
+        private void PlayMusic()
+        {
+            SoundPlayer pacManMusic = new SoundPlayer(Properties.Resources.pacman_beginning);
+            pacManMusic.Play();
+            
         }
     }
 }

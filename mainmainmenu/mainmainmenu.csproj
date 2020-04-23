@@ -96,6 +96,12 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PacManGameScreen.resx">
+      <DependentUpon>PacManGameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PacManOptions.resx">
+      <DependentUpon>PacManOptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -223,6 +229,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Scared ghost.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MuteSound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_chomp.wav" />
+    <None Include="Resources\pacman_beginning.wav" />
+    <Content Include="Resources\Sound\pacman_beginning.wav" />
+    <Content Include="Resources\Sound\pacman_chomp.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
