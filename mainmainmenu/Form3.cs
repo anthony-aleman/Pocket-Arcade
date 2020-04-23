@@ -24,12 +24,14 @@ namespace mainmainmenu
 
         private void NewGame_BTN_Click(object sender, EventArgs e)
         {
-
+            PacManGameScreen pmGameScreen = new PacManGameScreen();
+            pmGameScreen.Show();
         }
 
         private void Options_BTN_Click(object sender, EventArgs e)
         {
-
+            PacManOptions pmOptionsScreen = new PacManOptions();
+            pmOptionsScreen.Show();
         }
 
         private void Exit_BTN_Click(object sender, EventArgs e)
