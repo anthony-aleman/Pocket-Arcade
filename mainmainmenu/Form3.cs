@@ -20,10 +20,9 @@ namespace mainmainmenu
 
         private void PacMan_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
-            {
-                PlayMusic();
-            }
+            
+            PlayMusic();
+            
         }
 
         private void NewGame_BTN_Click(object sender, EventArgs e)
@@ -58,8 +57,7 @@ namespace mainmainmenu
         private void PlayMusic()
         {
             SoundPlayer pacManMusic = new SoundPlayer(Properties.Resources.pacman_beginning);
-            pacManMusic.Play();
-            
+            pacManMusic.Play();        
         }
     }
 }
