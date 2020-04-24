@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace SnakeGame
 {
@@ -16,6 +17,8 @@ namespace SnakeGame
         private List<Body> Snake = new List<Body>();    //Array of snake parts
         private Body food = new Body();
         Settings settings = new Settings();
+
+        bool mute = false;
 
         public Form1()
         {
@@ -39,7 +42,7 @@ namespace SnakeGame
             Input.changeState(e.KeyCode, false);
         }
 
-        private void UpdateGame(object sender, PaintEventArgs e)
+        private void UpdateGame(object sender, PaintEventArgs e)    //Drawing Snake
         {
             Graphics game = e.Graphics;
 
@@ -52,19 +55,12 @@ namespace SnakeGame
                 for(int i = 0; i < Snake.Count; i++)
                 {
                     //Draw Snake
-                    game.FillEllipse(SnakeColor, new Rectangle((Snake[i].GetX() * settings.GetWidth()), (Snake[i].GetY() * settings.GetHeight()), settings.GetWidth(), settings.GetHeight()));
+                    game.FillRectangle(SnakeColor, new Rectangle((Snake[i].GetX() * settings.GetWidth()), (Snake[i].GetY() * settings.GetHeight()), settings.GetWidth(), settings.GetHeight()));
                     
                     //Draw Food
                     game.FillEllipse(Brushes.Red, new Rectangle((food.GetX() * settings.GetWidth()), (food.GetY() * settings.GetHeight()), settings.GetWidth(), settings.GetHeight()));
                 }
             }
-            //If game is over
-            else
-            {
-                //Show a game over message
-                //Probably just make something visible
-            }
-
 
         }
 
@@ -107,6 +103,7 @@ namespace SnakeGame
                 {
                     switch (settings.GetDirection())
                     {
+                        //Checks what direction to move the snake
                         case "Right":
                             Snake[i].AddX();
                             break;
@@ -120,7 +117,7 @@ namespace SnakeGame
                             Snake[i].SubY();
                             break;
                     }
-
+                    //Check if snake has hit anything, only need to check with the head
                     CheckCollisions(i);
 
                 }
@@ -138,9 +135,15 @@ namespace SnakeGame
             //Prevent the snake from leaving the window
             int xMax = GameWindow.Size.Width / settings.GetWidth();
             int yMax = GameWindow.Size.Height / settings.GetHeight();
-
+            SoundPlayer GameOver = new SoundPlayer(Properties.Resources.GameOver);
+            
+            //Check if snake is out of bounds
             if ((Snake[i].GetX() < 0) || (Snake[i].GetY() < 0) || (Snake[i].GetX() > xMax) || (Snake[i].GetY() > yMax))
             {
+                if (mute == false)
+                {
+                    GameOver.Play();
+                }
                 EndGame();
             }
 
@@ -149,6 +152,10 @@ namespace SnakeGame
             {
                 if(Snake[i].GetX() == Snake[j].GetX() && Snake[i].GetY() == Snake[j].GetY())
                 {
+                    if (mute == false)
+                    {
+                        GameOver.Play();
+                    }
                     EndGame();
                 }
             }
@@ -162,36 +169,45 @@ namespace SnakeGame
 
         private void StartGame()
         {
-            //Run at a button press maybe
+            //Resetting game
             settings.SetGameOver(false);
-            Body head = new Body(10, 10);
+            labelGameOver.Visible = false;
+            labelGameOverSub.Visible = false;
+            StartButton.Visible = false;
+            settings.SetDirection("Down");
             ScoreLabel.Text = "0";
             Snake.Clear();
+
+            //Create head
+            Body head = new Body(10, 10);
             Snake.Add(head);
 
             CreateFood();
 
         }
 
-        private void CreateFood()
+        private void CreateFood()   //Runs when food is eaten and when game starts, spawns food on map
         {
+            //Max cord vals
             int xMax = GameWindow.Size.Width / settings.GetWidth();
             int yMax = GameWindow.Size.Height / settings.GetHeight();
 
+            //Creates random vals for x and y cords
             Random r = new Random();
-
             int yRand;
             int xRand;
+
             //Check to make sure food doesn't spawn inside of the snake
             while(true == true)
             {
-                //Inifinite loop until a spot is found
+                //Infinite loop until a spot is found
                 yRand = r.Next(0, yMax);
                 xRand = r.Next(0, xMax);
                 bool unique = true;
                 //Checks every part of the snake
                 for(int i = Snake.Count-1; i >= 0; i--)
                 {
+                    //Check if food has same cords as a part of snake
                     if(Snake[i].GetX() == xRand && Snake[i].GetY() == yRand)
                     {
                         unique = false;
@@ -206,22 +222,39 @@ namespace SnakeGame
                 }
 
             }
-           
-
         }
 
-        private void EatFood()
+        private void EatFood()  //Runs when snake makes collision with food
         {
+            //Takes position of last snake body part and adds a new piece
             Body x = new Body(Snake[Snake.Count - 1].GetX(), Snake[Snake.Count - 1].GetY());
             Snake.Add(x);
+            //Play sound
+            SoundPlayer Eat = new SoundPlayer(Properties.Resources.eatSound);
+            if (mute == false)
+            {
+                Eat.Play();
+            }
+            //Updating Score
             settings.SetScore(settings.GetScore() + 1);
             ScoreLabel.Text = Convert.ToString(settings.GetScore());
+            //updating High Score
+            if(settings.GetScore() > Convert.ToInt32(labelHighScore.Text))
+            {
+                labelHighScore.Text = Convert.ToString(settings.GetScore());
+            }
+
             CreateFood();
         }
 
         private void EndGame()
         {
+            //Ends Game
             settings.SetGameOver(true);
+            settings.SetScore(0);
+            labelGameOver.Visible = true;
+            labelGameOverSub.Visible = true;
+            //Plays game over sound
         }
 
         private void StartButton_Click(object sender, EventArgs e)
@@ -229,10 +262,24 @@ namespace SnakeGame
             StartGame();
         }
 
-        private void keypress(object sender, KeyPressEventArgs e)
+        private void GameSound_Click(object sender, EventArgs e)
         {
-            //Input.changeState(e.KeyCode, true)
-            label2.Text = "test5 worked";
+            // Used to mute sound
+            if(mute == false)
+            {
+                mute = true;
+                GameSound.Image = Properties.Resources.off;
+            }
+            else
+            {
+                mute = false;
+                GameSound.Image = Properties.Resources.on;
+            }
+        }
+
+        private void HelpButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("The goal of Snake is to maneuver a line and collect food to grow in length and score. You must be careful however because bumping into yourself or the walls will result in a game over.\n \n \n Use WASD or arrow keys to control the snake");
         }
     }
 }

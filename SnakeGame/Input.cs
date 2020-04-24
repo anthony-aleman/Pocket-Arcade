@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SnakeGame
 {
-    class Input
+    class Input //Class to handle inputs
     {
         private static Hashtable keyTable = new Hashtable();
 

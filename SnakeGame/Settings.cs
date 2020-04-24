@@ -17,8 +17,8 @@ namespace SnakeGame
 
         public Settings()
         {
-            Width = 16;
-            Height = 16;
+            Width = 18;
+            Height = 18;
             Speed = 20;
             Score = 0;
             GameOver = false;

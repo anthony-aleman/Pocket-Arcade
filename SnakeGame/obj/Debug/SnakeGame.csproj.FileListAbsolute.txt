@@ -7,3 +7,12 @@ E:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.Prope
 E:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.csproj.GenerateResource.cache
 E:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.exe
 E:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.pdb
+F:\.Everything College\Programming\SnakeGame\SnakeGame\bin\Debug\SnakeGame.exe.config
+F:\.Everything College\Programming\SnakeGame\SnakeGame\bin\Debug\SnakeGame.exe
+F:\.Everything College\Programming\SnakeGame\SnakeGame\bin\Debug\SnakeGame.pdb
+F:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.csprojAssemblyReference.cache
+F:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.Form1.resources
+F:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.Properties.Resources.resources
+F:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.csproj.GenerateResource.cache
+F:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.exe
+F:\.Everything College\Programming\SnakeGame\SnakeGame\obj\Debug\SnakeGame.pdb
