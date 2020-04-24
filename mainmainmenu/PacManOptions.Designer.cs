@@ -63,7 +63,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Emulogic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(205, 236);
+            this.label3.Location = new System.Drawing.Point(184, 236);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(309, 50);
             this.label3.TabIndex = 2;
@@ -76,7 +76,7 @@
             this.checkBox1.ForeColor = System.Drawing.Color.White;
             this.checkBox1.Location = new System.Drawing.Point(214, 335);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(186, 21);
+            this.checkBox1.Size = new System.Drawing.Size(198, 22);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Toggle Sound";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -107,6 +107,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PacManOptions";
             this.Text = "PacManOptions";
+            this.Load += new System.EventHandler(this.PacManOptions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

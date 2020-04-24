@@ -63,6 +63,8 @@ namespace mainmainmenu
 
         private void PacManGameScreen_KeyDown(object sender, KeyEventArgs e)
         {
+            //Sound of pac man moving
+
             SoundPlayer movingSound = new SoundPlayer(Properties.Resources.pacman_chomp);
             movingSound.Play();
             switch (e.KeyCode)
@@ -84,8 +86,8 @@ namespace mainmainmenu
 
         private void PacManGameScreen_KeyUp(object sender, KeyEventArgs e)
         {
-            SoundPlayer movingSound = new SoundPlayer(Properties.Resources.pacman_chomp);
-            movingSound.Play();
+            
+
             if (e.KeyCode == Keys.Left)
             {
                 pac_man.SetFalse("left");
@@ -243,17 +245,22 @@ namespace mainmainmenu
                         if (pac_man.GetScore() == 23)
                         {
                             label2.Text = "YOU WIN";
+
                         }
                         else
                         {
                             label2.Text = "GAME OVER";
+                            
                         }
                         label3.Text = "Play Again?";
                         Play_BTN.Visible = true;
                         Exit_BTN.Visible = true;
                         Play_BTN.Enabled = true;
                         Exit_BTN.Enabled = true;
+                        SoundPlayer deathSound = new SoundPlayer(Properties.Resources.pacman_death);
+                        deathSound.Play();
                         timer1.Stop();
+                      
                     }
                 }
 
@@ -277,7 +284,10 @@ namespace mainmainmenu
                         Exit_BTN.Visible = true;
                         Play_BTN.Enabled = true;
                         Exit_BTN.Enabled = true;
+                        SoundPlayer deathSound = new SoundPlayer(Properties.Resources.pacman_death);
+                        deathSound.PlaySync();
                         timer1.Stop();
+                        
                     }
                 }
 
@@ -297,6 +307,8 @@ namespace mainmainmenu
                             Exit_BTN.Visible = true;
                             Play_BTN.Enabled = true;
                             Exit_BTN.Enabled = true;
+                            SoundPlayer deathSound = new SoundPlayer(Properties.Resources.pacman_death);
+                            deathSound.PlaySync();
                             timer1.Stop();
                         }
                         
@@ -437,6 +449,9 @@ namespace mainmainmenu
         {
             PacManGameScreen newScreen = new PacManGameScreen();
             newScreen.Show();
+
+            SoundPlayer newGameSound = new SoundPlayer(Properties.Resources.pacman_beginning);
+            newGameSound.Play();
         }
 
         private void Exit_BTN_Click(object sender, EventArgs e)

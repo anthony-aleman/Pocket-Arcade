@@ -31,5 +31,10 @@ namespace mainmainmenu
 
             }
         }
+
+        private void PacManOptions_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

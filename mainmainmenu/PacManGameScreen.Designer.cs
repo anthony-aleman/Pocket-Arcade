@@ -35,6 +35,11 @@
             this.RightBorder = new System.Windows.Forms.PictureBox();
             this.BottomBorder = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Exit_BTN = new System.Windows.Forms.Button();
+            this.Play_BTN = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.PCBX1 = new System.Windows.Forms.PictureBox();
             this.PCBX2 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -71,11 +76,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.PCBXRBorder = new System.Windows.Forms.PictureBox();
             this.PCBXLBorder = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Play_BTN = new System.Windows.Forms.Button();
-            this.Exit_BTN = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.TopBorder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LeftBorder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RightBorder)).BeginInit();
@@ -165,6 +165,60 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(588, 121);
             this.panel1.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Emulogic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(119, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(232, 26);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Play Again?";
+            // 
+            // Exit_BTN
+            // 
+            this.Exit_BTN.Enabled = false;
+            this.Exit_BTN.Font = new System.Drawing.Font("Emulogic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_BTN.Location = new System.Drawing.Point(483, 64);
+            this.Exit_BTN.Name = "Exit_BTN";
+            this.Exit_BTN.Size = new System.Drawing.Size(93, 41);
+            this.Exit_BTN.TabIndex = 3;
+            this.Exit_BTN.Text = "No!";
+            this.Exit_BTN.UseVisualStyleBackColor = true;
+            this.Exit_BTN.Click += new System.EventHandler(this.Exit_BTN_Click);
+            // 
+            // Play_BTN
+            // 
+            this.Play_BTN.Enabled = false;
+            this.Play_BTN.Font = new System.Drawing.Font("Emulogic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Play_BTN.Location = new System.Drawing.Point(379, 64);
+            this.Play_BTN.Name = "Play_BTN";
+            this.Play_BTN.Size = new System.Drawing.Size(93, 41);
+            this.Play_BTN.TabIndex = 2;
+            this.Play_BTN.Text = "Yes!";
+            this.Play_BTN.UseVisualStyleBackColor = true;
+            this.Play_BTN.Click += new System.EventHandler(this.Play_BTN_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Emulogic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(353, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 26);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Emulogic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(84, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // PCBX1
             // 
@@ -572,60 +626,6 @@
             this.PCBXLBorder.TabIndex = 39;
             this.PCBXLBorder.TabStop = false;
             this.PCBXLBorder.Tag = "wall";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Emulogic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(84, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Emulogic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(353, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            // 
-            // Play_BTN
-            // 
-            this.Play_BTN.Enabled = false;
-            this.Play_BTN.Font = new System.Drawing.Font("Emulogic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Play_BTN.Location = new System.Drawing.Point(392, 64);
-            this.Play_BTN.Name = "Play_BTN";
-            this.Play_BTN.Size = new System.Drawing.Size(93, 41);
-            this.Play_BTN.TabIndex = 2;
-            this.Play_BTN.Text = "Yes!";
-            this.Play_BTN.UseVisualStyleBackColor = true;
-            this.Play_BTN.Click += new System.EventHandler(this.Play_BTN_Click);
-            // 
-            // Exit_BTN
-            // 
-            this.Exit_BTN.Enabled = false;
-            this.Exit_BTN.Font = new System.Drawing.Font("Emulogic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit_BTN.Location = new System.Drawing.Point(492, 64);
-            this.Exit_BTN.Name = "Exit_BTN";
-            this.Exit_BTN.Size = new System.Drawing.Size(93, 41);
-            this.Exit_BTN.TabIndex = 3;
-            this.Exit_BTN.Text = "No!";
-            this.Exit_BTN.UseVisualStyleBackColor = true;
-            this.Exit_BTN.Click += new System.EventHandler(this.Exit_BTN_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Emulogic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(145, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 26);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Try Again?";
             // 
             // PacManGameScreen
             // 
