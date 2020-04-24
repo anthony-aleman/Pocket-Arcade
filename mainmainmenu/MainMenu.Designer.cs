@@ -35,10 +35,8 @@
             this.PacMan_BTN = new System.Windows.Forms.Button();
             this.thunberbolt2 = new System.Windows.Forms.PictureBox();
             this.thunderbolt1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.thunberbolt2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thunderbolt1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,10 +115,9 @@
             // 
             // thunberbolt2
             // 
-            this.thunberbolt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.thunberbolt2.BackgroundImage = global::mainmainmenu.Properties.Resources.Background;
+            this.thunberbolt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.thunberbolt2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.thunberbolt2.Image = global::mainmainmenu.Properties.Resources.lightning_bolt;
+            this.thunberbolt2.Image = global::mainmainmenu.Properties.Resources.Bolt;
             this.thunberbolt2.InitialImage = global::mainmainmenu.Properties.Resources.lightning_bolt;
             this.thunberbolt2.Location = new System.Drawing.Point(633, 277);
             this.thunberbolt2.Name = "thunberbolt2";
@@ -131,7 +128,7 @@
             // 
             // thunderbolt1
             // 
-            this.thunderbolt1.Image = global::mainmainmenu.Properties.Resources.lightning_bolt;
+            this.thunderbolt1.Image = global::mainmainmenu.Properties.Resources.Bolt;
             this.thunderbolt1.Location = new System.Drawing.Point(51, 120);
             this.thunderbolt1.Name = "thunderbolt1";
             this.thunderbolt1.Size = new System.Drawing.Size(123, 141);
@@ -139,27 +136,13 @@
             this.thunderbolt1.TabIndex = 5;
             this.thunderbolt1.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::mainmainmenu.Properties.Resources.Background;
-            this.pictureBox1.Image = global::mainmainmenu.Properties.Resources.lightning_bolt;
-            this.pictureBox1.Location = new System.Drawing.Point(613, 189);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 264);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // PocketArcade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.thunberbolt2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PacMan_BTN);
             this.Controls.Add(this.Snake_BTN);
             this.Controls.Add(this.Minesweeper_BTN);
@@ -172,7 +155,6 @@
             this.Click += new System.EventHandler(this.PocketArcade_Click);
             ((System.ComponentModel.ISupportInitialize)(this.thunberbolt2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thunderbolt1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +168,6 @@
         private System.Windows.Forms.Button Snake_BTN;
         private System.Windows.Forms.Button PacMan_BTN;
         private System.Windows.Forms.PictureBox thunberbolt2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
