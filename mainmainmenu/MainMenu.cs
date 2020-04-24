@@ -61,5 +61,10 @@ namespace mainmainmenu
             var BTN = (Button)sender;
             BTN.BackColor = Color.Orchid;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

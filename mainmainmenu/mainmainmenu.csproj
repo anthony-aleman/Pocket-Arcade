@@ -233,6 +233,7 @@
     <None Include="Resources\pacman_chomp.wav" />
     <None Include="Resources\pacman_beginning.wav" />
     <None Include="Resources\pacman_death.wav" />
+    <None Include="Resources\Background.PNG" />
     <Content Include="Resources\Sound\pacman_beginning.wav" />
     <Content Include="Resources\Sound\pacman_chomp.wav" />
   </ItemGroup>
