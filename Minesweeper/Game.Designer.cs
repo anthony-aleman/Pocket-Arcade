@@ -124,7 +124,7 @@
             this.tile22.Size = new System.Drawing.Size(75, 73);
             this.tile22.TabIndex = 31;
             this.tile22.UseVisualStyleBackColor = true;
-            this.tile22.Click += new System.EventHandler(this.button15_Click);
+            this.tile22.Click += new System.EventHandler(this.tile22_Click);
             // 
             // tile20
             // 
@@ -134,7 +134,7 @@
             this.tile20.Size = new System.Drawing.Size(75, 73);
             this.tile20.TabIndex = 30;
             this.tile20.UseVisualStyleBackColor = true;
-            this.tile20.Click += new System.EventHandler(this.button14_Click);
+            this.tile20.Click += new System.EventHandler(this.tile20_Click);
             // 
             // tile33
             // 
@@ -144,7 +144,7 @@
             this.tile33.Size = new System.Drawing.Size(75, 73);
             this.tile33.TabIndex = 29;
             this.tile33.UseVisualStyleBackColor = true;
-            this.tile33.Click += new System.EventHandler(this.button13_Click);
+            this.tile33.Click += new System.EventHandler(this.tile33_Click);
             // 
             // tile21
             // 
@@ -154,7 +154,7 @@
             this.tile21.Size = new System.Drawing.Size(75, 73);
             this.tile21.TabIndex = 28;
             this.tile21.UseVisualStyleBackColor = true;
-            this.tile21.Click += new System.EventHandler(this.button12_Click);
+            this.tile21.Click += new System.EventHandler(this.tile21_Click);
             // 
             // tile11
             // 
@@ -204,7 +204,7 @@
             this.tile23.Size = new System.Drawing.Size(75, 73);
             this.tile23.TabIndex = 23;
             this.tile23.UseVisualStyleBackColor = true;
-            this.tile23.Click += new System.EventHandler(this.button7_Click);
+            this.tile23.Click += new System.EventHandler(this.tile23_Click);
             // 
             // tile03
             // 
@@ -224,7 +224,7 @@
             this.tile13.Size = new System.Drawing.Size(75, 73);
             this.tile13.TabIndex = 21;
             this.tile13.UseVisualStyleBackColor = true;
-            this.tile13.Click += new System.EventHandler(this.tile_Click);
+            this.tile13.Click += new System.EventHandler(this.tile13_Click);
             // 
             // tile32
             // 
@@ -234,7 +234,7 @@
             this.tile32.Size = new System.Drawing.Size(75, 73);
             this.tile32.TabIndex = 19;
             this.tile32.UseVisualStyleBackColor = true;
-            this.tile32.Click += new System.EventHandler(this.button3_Click);
+            this.tile32.Click += new System.EventHandler(this.tile32_Click);
             // 
             // tile00
             // 
@@ -254,7 +254,7 @@
             this.tile31.Size = new System.Drawing.Size(75, 73);
             this.tile31.TabIndex = 17;
             this.tile31.UseVisualStyleBackColor = true;
-            this.tile31.Click += new System.EventHandler(this.button1_Click);
+            this.tile31.Click += new System.EventHandler(this.tile31_Click);
             // 
             // tile30
             // 
@@ -264,7 +264,7 @@
             this.tile30.Size = new System.Drawing.Size(75, 73);
             this.tile30.TabIndex = 16;
             this.tile30.UseVisualStyleBackColor = true;
-            this.tile30.Click += new System.EventHandler(this.tile0_0_Click);
+            this.tile30.Click += new System.EventHandler(this.tile30_Click);
             // 
             // pictureBox1
             // 

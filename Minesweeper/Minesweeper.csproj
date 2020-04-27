@@ -136,6 +136,8 @@
     <None Include="Resources\drop down  triangle.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\M_mine.bmp" />
+    <None Include="Resources\Mine_pic.jpg" />
     <Content Include="Resources\pressedtile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

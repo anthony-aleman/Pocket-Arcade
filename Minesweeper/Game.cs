@@ -51,65 +51,154 @@ namespace Minesweeper
                     else
                     {
                         isMine[i, j] = true;
-                        minecount++;
+                        button[i, j] = 0;
+                        ++minecount;
+
+                        try
+                        {
+                            addValues(i, j);
+                        }
+                        catch (IndexOutOfRangeException)
+                        {
+
+                        }
+                        
 
                     }
                 }
             }
+
+            
         }
 
-       private void addValues()
+       private void addValues(int i, int j)
           {
-            for (int i = 0; i < 4; i++)
+            //Body
+            if ((i == 1 || i == 2) && (j == 1 || j == 2))//Positions {(2,2),(2,3),(3,2),(3,3)}
             {
-                for (int j = 0; j < 4; j++)
+                if (isMine[i + 1, j] == false)
                 {
-                    if (isMine[i,j] == true)
-                    {
-                        if ((i == 2 || i == 3) && (j == 2 || j == 3))//Positions {(2,2),(2,3),(3,2),(3,3)}
-                        {
-                            button[i + 1, j] += 1;
-                            button[i - 1, j] += 1;
-                            button[i, j + 1] += 1;
-                            button[i, j - 1] += 1;
-                        }
-                        if ((i == 1 || i == 4) && (j == 2 || j == 3))//Positions {(1,2),(1, 3),(4, 2),(4, 3)}
-                        {
-                            button[i + 1, j] += 1;
-                            button[i, j - 1] += 1;
-                            button[i, j + 1] += 1;
-                        }
-                        if ((i == 2 || i == 3) && j == 1)//Positions {(2, 1)(3, 1)}
-                        {
-                            button[i + 1, j] += 1;
-                            button[i - 1, j] += 1;
-                            button[i, j + 1] += 1;
-                        }
-                        if ((i == 1 && j == 1))// Position {(1,1)}
-                        {
-                            button[i + 1, j] += 1;
-                            button[i, j + 1] += 1;
-                        }
-                        if ((i == 1 && j == 4))//Position {1,4)}
-                        {
-                            button[i - 1, j] += 1;
-                            button[i, j - 1] += 1;
-                        }
-                        if ((i == 4 && j == 1))//Postion {(4,1)}
-                        {
-                            button[i - 1, j] += 1;
-                            button[i, j + 1] += 1;
-                        }
-                        if ((i == 1 && j == 1))//Position {(4,4)}
-                        {
-                            button[i - 1, j] += 1;
-                            button[i, j - 1] += 1;
-                        }
-                    }
-                    else
-                    {
-                        button[i, j] = -1;
-                    }
+                    button[i + 1, j] += 1;
+                }
+                if (isMine[i - 1, j] == false)
+                {
+                    button[i - 1, j] += 1;
+                }
+                if (isMine[i, j + 1] == false)
+                {
+                    button[i, j + 1] += 1;
+                }
+                if (isMine[i, j - 1] == false)
+                {
+                    button[i, j - 1] += 1;
+                }
+            }
+            //Left 
+            if (i == 0  && (j == 1 || j == 2))//Positions {(1,2),(1, 3)}
+            {
+                if (isMine[i + 1, j] == false)
+                {
+                    button[i + 1, j] += 1;
+                }
+                if (isMine[i, j - 1] == false)
+                {
+                    button[i, j - 1] += 1;
+                }
+                if (isMine[i, j + 1] == false)
+                {
+                    button[i, j + 1] += 1;
+                }
+            }
+            //Right
+            if (i == 3 && (j == 1 || j == 2))//Positions {(4,2),(4,3)}
+            {
+                if (isMine[i - 1, j] == false)
+                {
+                    button[i - 1, j] += 1;
+                }
+                if (isMine[i, j + 1] == false)
+                {
+                    button[i, j + 1] += 1;
+                }
+                if (isMine[i, j - 1] == false)
+                {
+                    button[i, j + 1] += 1;
+                }
+            }
+            //Top
+            if ((i == 1 || i == 2) && j == 0)//Positions {(2, 1)(3,1)}
+            {
+                if (isMine[i + 1, j] == false)
+                {
+                    button[i + 1, j] += 1;
+                }
+                if (isMine[i - 1, j] == false)
+                {
+                    button[i - 1, j] += 1;
+                }
+                if (isMine[i, j + 1] == false)
+                {
+                    button[i, j + 1] += 1;
+                }
+            }
+            if ((i == 1 || i == 2) && (j == 3))//Position {(2,4),(3,4)}
+            {
+                if (isMine[i + 1, j] == false)
+                {
+                    button[i + 1, j] += 1;
+                }
+                if (isMine[i - 1, j] == false)
+                {
+                    button[i - 1, j] += 1;
+                }
+                if (isMine[i, j -1] == false)
+                {
+                    button[i, j - 1] += 1;
+                }
+            }
+            //Corners
+            if ((i == 0 && j == 0))// Position {(1,1)}
+            {
+                if (isMine[i + 1, j] == false)
+                {
+                    button[i + 1, j] += 1;
+                }
+                if (isMine[i, j + 1] == false)
+                {
+                    button[i + 1, j] += 1;
+                }
+            }
+            if ((i == 0 && j == 3))//Position {1,4)}
+            {
+                if (isMine[i - 1, j] == false)
+                {
+                    button[i - 1, j] += 1;
+                }
+                if (isMine[i, j - 1] == false)
+                {
+                    button[i, j - 1] += 1;
+                }
+            }
+            if ((i == 3 && j == 0))//Postion {(4,1)}
+            {
+                if (isMine[i - 1, j] == false)
+                {
+                    button[i - 1, j] += 1;
+                }
+                if (isMine[i, j + 1] == false)
+                {
+                    button[i, j + 1] += 1;
+                }
+            }
+            if ((i == 3 && j == 3))//Position {(4,4)}
+            {
+                if (isMine[i - 1, j] == false)
+                {
+                    button[i - 1, j] += 1;
+                }
+                if (isMine[i, j - 1] == false)
+                {
+                    button[i, j - 1] += 1;
                 }
             }
           }
@@ -121,49 +210,144 @@ namespace Minesweeper
             {
                 if (i == 0 && j == 0)
                 {
-                    tile00.Image = Properties.Resources.mine;
+                    tile00.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 0 && j == 1)
                 {
-                    tile01.Image = Properties.Resources.mine;
+                    tile01.Image = Properties.Resources.Mine_pic;
+                }
+                if (i == 0 && j == 2)
+                {
+                    tile02.Image = Properties.Resources.Mine_pic;
+                }
+                if (i == 0 && j == 3)
+                {
+                    tile03.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 1 && j == 0)
                 {
-                    tile10.Image = Properties.Resources.mine;
+                    tile10.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 1 && j == 1)
                 {
-                    tile11.Image = Properties.Resources.mine;
+                    tile11.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 1 && j == 2)
                 {
-                    tile12.Image = Properties.Resources.mine;
+                    tile12.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 2 && j == 2)
                 {
-                    tile22.Image = Properties.Resources.mine;
+                    tile22.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 2 && j == 1)
                 {
-                    tile21.Image = Properties.Resources.mine;
+                    tile21.Image = Properties.Resources.Mine_pic;
+                }
+                if (i == 2 && j == 0)
+                {
+                    tile20.Image = Properties.Resources.Mine_pic;
+                }
+                if (i == 1 && j == 3)
+                {
+                    tile13.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 2 && j == 3)
                 {
-                    tile23.Image = Properties.Resources.mine;
+                    tile23.Image = Properties.Resources.Mine_pic;
+                }
+                if (i == 3 && j == 0)
+                {
+                    tile30.Image = Properties.Resources.Mine_pic;
+                    
+                }
+                if (i == 3 && j == 1)
+                {
+                    tile31.Image = Properties.Resources.Mine_pic;
                 }
                 if (i == 3 && j == 2)
                 {
-                    tile32.Image = Properties.Resources.mine;
+                    tile32.Image = Properties.Resources.Mine_pic;
+                }
+                if (i == 3 && j == 3)
+                {
+                    tile33.Image = Properties.Resources.Mine_pic;
                 }
                 gameisOver = true;
             }
             else
             {
                 gameisOver = false;
+            } 
+
+        }
+
+        private void checkTileScore(int i, int j)
+        {
+            if (i == 0 && j == 0)
+            {
+                tile00.Text = button[i, j].ToString();
             }
-
-         
-
+            if (i == 0 && j == 1)
+            {
+                tile01.Text = button[i, j].ToString();
+            }
+            if (i == 0 && j == 2)
+            {
+                tile02.Text = button[i, j].ToString();
+            }
+            if (i == 0 && j == 3)
+            {
+                tile03.Text = button[i, j].ToString(); ;
+            }
+            if (i == 1 && j == 0)
+            {
+                tile10.Text = button[i, j].ToString(); 
+            }
+            if (i == 1 && j == 1)
+            {
+                tile11.Text = button[i, j].ToString();
+            }
+            if (i == 1 && j == 2)
+            {
+                tile12.Text = button[i, j].ToString();
+            }
+            if (i == 2 && j == 2)
+            {
+                tile22.Text = button[i, j].ToString();
+            }
+            if (i == 2 && j == 1)
+            {
+                tile21.Text = button[i, j].ToString();
+            }
+            if (i == 2 && j == 0)
+            {
+                tile20.Text = button[i, j].ToString();
+            }
+            if (i == 1 && j == 3)
+            {
+                tile13.Text = button[i, j].ToString();
+            }
+            if (i == 2 && j == 3)
+            {
+                tile23.Text = button[i, j].ToString();
+            }
+            if (i == 3 && j == 0)
+            {
+                tile30.Text = button[i, j].ToString();
+            }
+            if (i == 3 && j == 1)
+            {
+                tile31.Text = button[i, j].ToString();
+            }
+            if (i == 3 && j == 2)
+            {
+                tile32.Text = button[i, j].ToString();
+            }
+            if (i == 3 && j == 3)
+            {
+                tile33.Text = button[i, j].ToString();
+            }
         }
 
         private void checkWinner() //checks tiles to declare winner
@@ -203,12 +387,13 @@ namespace Minesweeper
         private void tile00_Click(object sender, EventArgs e)
         {
             tile00.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
             checkMine(0, 0);
+            checkTileScore(0, 0);
 
             if (!gameisOver)
             {
                 checktiles++;
-                checkWinner();
             }
             else
             {
@@ -218,15 +403,14 @@ namespace Minesweeper
 
         private void tile01_Click(object sender, EventArgs e)
         {
-            tile01.Image = Minesweeper.Properties.Resources.pressedtile;
-           // tile01.Enabled = false;
-
+            tile00.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
             checkMine(0, 1);
+            checkTileScore(0, 1);
 
             if (!gameisOver)
             {
                 checktiles++;
-                checkWinner();
             }
             else
             {
@@ -237,13 +421,13 @@ namespace Minesweeper
         private void tile02_Click(object sender, EventArgs e)
         {
             tile02.Image = Minesweeper.Properties.Resources.pressedtile;
-            //tile02.Enabled = false;
-            checkMine(0, 1);
+            checkWinner();
+            checkMine(0, 2);
+            checkTileScore(0, 2);
 
             if (!gameisOver)
             {
                 checktiles++;
-                checkWinner();
             }
             else
             {
@@ -254,13 +438,13 @@ namespace Minesweeper
         private void tile03_Click(object sender, EventArgs e)
         {
             tile03.Image = Minesweeper.Properties.Resources.pressedtile;
-            //tile03.Enabled = false;
-            checkMine(0, 1);
+            checkWinner();
+            checkMine(0, 3);
+            checkTileScore(0, 3);
 
             if (!gameisOver)
             {
                 checktiles++;
-                checkWinner();
             }
             else
             {
@@ -271,13 +455,12 @@ namespace Minesweeper
         private void tile10_Click(object sender, EventArgs e)
         {
             tile10.Image = Minesweeper.Properties.Resources.pressedtile;
-            //tile10.Enabled = false;
-            checkMine(0, 1);
+            checkMine(1, 0);
+            checkTileScore(1, 0);
 
             if (!gameisOver)
             {
                 checktiles++;
-                checkWinner();
             }
             else
             {
@@ -288,12 +471,13 @@ namespace Minesweeper
         private void tile11_Click(object sender, EventArgs e)
         {
             tile11.Image = Minesweeper.Properties.Resources.pressedtile;
-            checkMine(0, 1);
+            checkWinner();
+            checkMine(1, 1);
+            checkTileScore(1, 1);
 
             if (!gameisOver)
             {
                 checktiles++;
-                checkWinner();
             }
             else
             {
@@ -304,13 +488,13 @@ namespace Minesweeper
         private void tile12_Click(object sender, EventArgs e)
         {
             tile12.Image = Minesweeper.Properties.Resources.pressedtile;
-            tile12.Enabled = false;
-            checkMine(0, 1);
+            checkWinner();
+            checkMine(1, 2);
+            checkTileScore(1, 2);
 
             if (!gameisOver)
             {
                 checktiles++;
-                checkWinner();
             }
             else
             {
@@ -318,157 +502,6 @@ namespace Minesweeper
             }
         }
 
-        private void tile_Click(object sender, EventArgs e)
-        {
-            tile13.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            tile20.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            tile21.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            tile22.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            tile23.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void tile0_0_Click(object sender, EventArgs e)
-        {
-            tile30.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            tile31.Image = Minesweeper.Properties.Resources.pressedtile;
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            tile32.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-            tile33.Image = Minesweeper.Properties.Resources.pressedtile;
-
-            checkMine(0, 1);
-
-            if (!gameisOver)
-            {
-                checktiles++;
-                checkWinner();
-            }
-            else
-            {
-                gameOver();
-            }
-        }
 
         private void loadGame_Click(object sender, EventArgs e)
         {
@@ -477,6 +510,160 @@ namespace Minesweeper
             newGame.Show();
 
         }
+
+        private void tile13_Click(object sender, EventArgs e)
+        {
+            tile13.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(1, 3);
+            checkTileScore(1, 3);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile20_Click(object sender, EventArgs e)
+        {
+            tile20.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(2, 0);
+            checkTileScore(2, 0);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile21_Click(object sender, EventArgs e)
+        {
+            tile21.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(2, 1);
+            checkTileScore(0, 0);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile22_Click(object sender, EventArgs e)
+        {
+            tile22.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(2, 2);
+            checkTileScore(2, 2);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile23_Click(object sender, EventArgs e)
+        {
+            tile23.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(2, 3);
+            checkTileScore(2, 3);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile30_Click(object sender, EventArgs e)
+        {
+            tile30.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(3, 0);
+            checkTileScore(3, 0);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile31_Click(object sender, EventArgs e)
+        {
+            tile31.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(3, 1);
+            checkTileScore(3, 1);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile32_Click(object sender, EventArgs e)
+        {
+            tile32.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(3, 2);
+            checkTileScore(3, 2);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
+        private void tile33_Click(object sender, EventArgs e)
+        {
+            tile33.Image = Minesweeper.Properties.Resources.pressedtile;
+            checkWinner();
+            checkMine(3, 3);
+            checkTileScore(3, 3);
+
+            if (!gameisOver)
+            {
+                checktiles++;
+            }
+            else
+            {
+                gameOver();
+            }
+        }
+
         private void coolfont()
         {
             PrivateFontCollection newFont = new PrivateFontCollection();
