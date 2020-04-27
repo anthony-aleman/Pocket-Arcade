@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PocketArcade));
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_BTN = new System.Windows.Forms.Button();
             this.Minesweeper_BTN = new System.Windows.Forms.Button();
@@ -44,11 +45,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Orchid;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Vineta BT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(175, 36);
+            this.label1.Location = new System.Drawing.Point(263, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(475, 56);
+            this.label1.Size = new System.Drawing.Size(284, 48);
             this.label1.TabIndex = 7;
             this.label1.Text = "Pocket Arcade";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -56,9 +57,9 @@
             // Exit_BTN
             // 
             this.Exit_BTN.BackColor = System.Drawing.Color.Orchid;
-            this.Exit_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_BTN.ForeColor = System.Drawing.Color.Blue;
-            this.Exit_BTN.Location = new System.Drawing.Point(356, 323);
+            this.Exit_BTN.Location = new System.Drawing.Point(333, 323);
             this.Exit_BTN.Name = "Exit_BTN";
             this.Exit_BTN.Size = new System.Drawing.Size(135, 38);
             this.Exit_BTN.TabIndex = 11;
@@ -71,9 +72,9 @@
             // Minesweeper_BTN
             // 
             this.Minesweeper_BTN.BackColor = System.Drawing.Color.Orchid;
-            this.Minesweeper_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Minesweeper_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Minesweeper_BTN.ForeColor = System.Drawing.Color.Blue;
-            this.Minesweeper_BTN.Location = new System.Drawing.Point(265, 129);
+            this.Minesweeper_BTN.Location = new System.Drawing.Point(248, 129);
             this.Minesweeper_BTN.Name = "Minesweeper_BTN";
             this.Minesweeper_BTN.Size = new System.Drawing.Size(318, 38);
             this.Minesweeper_BTN.TabIndex = 12;
@@ -86,9 +87,9 @@
             // Snake_BTN
             // 
             this.Snake_BTN.BackColor = System.Drawing.Color.Orchid;
-            this.Snake_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Snake_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Snake_BTN.ForeColor = System.Drawing.Color.Blue;
-            this.Snake_BTN.Location = new System.Drawing.Point(265, 189);
+            this.Snake_BTN.Location = new System.Drawing.Point(248, 190);
             this.Snake_BTN.Name = "Snake_BTN";
             this.Snake_BTN.Size = new System.Drawing.Size(318, 38);
             this.Snake_BTN.TabIndex = 13;
@@ -101,9 +102,9 @@
             // PacMan_BTN
             // 
             this.PacMan_BTN.BackColor = System.Drawing.Color.Orchid;
-            this.PacMan_BTN.Font = new System.Drawing.Font("Vineta BT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PacMan_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PacMan_BTN.ForeColor = System.Drawing.Color.Blue;
-            this.PacMan_BTN.Location = new System.Drawing.Point(265, 249);
+            this.PacMan_BTN.Location = new System.Drawing.Point(248, 250);
             this.PacMan_BTN.Name = "PacMan_BTN";
             this.PacMan_BTN.Size = new System.Drawing.Size(318, 38);
             this.PacMan_BTN.TabIndex = 14;
@@ -115,11 +116,12 @@
             // 
             // thunberbolt2
             // 
-            this.thunberbolt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.thunberbolt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.thunberbolt2.BackgroundImage = global::mainmainmenu.Properties.Resources.Background;
             this.thunberbolt2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.thunberbolt2.Image = global::mainmainmenu.Properties.Resources.Bolt;
-            this.thunberbolt2.InitialImage = global::mainmainmenu.Properties.Resources.lightning_bolt;
-            this.thunberbolt2.Location = new System.Drawing.Point(633, 277);
+            this.thunberbolt2.Image = ((System.Drawing.Image)(resources.GetObject("thunberbolt2.Image")));
+            this.thunberbolt2.InitialImage = ((System.Drawing.Image)(resources.GetObject("thunberbolt2.InitialImage")));
+            this.thunberbolt2.Location = new System.Drawing.Point(635, 129);
             this.thunberbolt2.Name = "thunberbolt2";
             this.thunberbolt2.Size = new System.Drawing.Size(132, 148);
             this.thunberbolt2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,8 +130,8 @@
             // 
             // thunderbolt1
             // 
-            this.thunderbolt1.Image = global::mainmainmenu.Properties.Resources.Bolt;
-            this.thunderbolt1.Location = new System.Drawing.Point(51, 120);
+            this.thunderbolt1.Image = ((System.Drawing.Image)(resources.GetObject("thunderbolt1.Image")));
+            this.thunderbolt1.Location = new System.Drawing.Point(40, 129);
             this.thunderbolt1.Name = "thunderbolt1";
             this.thunderbolt1.Size = new System.Drawing.Size(123, 141);
             this.thunderbolt1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.thunberbolt2);
             this.Controls.Add(this.PacMan_BTN);

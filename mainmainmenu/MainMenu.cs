@@ -35,7 +35,7 @@ namespace mainmainmenu
 
         private void Snake_BTN_Click(object sender, EventArgs e)
         {
-            SnakeGameMenu sgMenu = new SnakeGameMenu();
+            SnakeGame sgMenu = new SnakeGame();
             sgMenu.Show();
         }
 
