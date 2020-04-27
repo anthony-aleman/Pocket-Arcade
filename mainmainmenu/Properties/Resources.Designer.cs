@@ -271,6 +271,26 @@ namespace mainmainmenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mine_2 {
+            get {
+                object obj = ResourceManager.GetObject("mine 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mine_coloredBackground {
+            get {
+                object obj = ResourceManager.GetObject("Mine_coloredBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MuteSound {
             get {
                 object obj = ResourceManager.GetObject("MuteSound", resourceCulture);
