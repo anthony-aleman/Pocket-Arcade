@@ -8,3 +8,13 @@ C:\Users\samya\Desktop\New Minesweeper\Minesweeper\bin\Debug\Minesweeper.pdb
 C:\Users\samya\Desktop\New Minesweeper\Minesweeper\obj\Debug\Minesweeper.Minesweepermenu.resources
 C:\Users\samya\Desktop\New Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
 C:\Users\samya\Desktop\New Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\obj\Debug\Minesweeper.csprojAssemblyReference.cache
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\obj\Debug\Minesweeper.Game.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\obj\Debug\Minesweeper.Minesweepermenu.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.cache
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\obj\Debug\Minesweeper.exe
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\obj\Debug\Minesweeper.pdb
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\bin\Debug\Minesweeper.exe.config
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\bin\Debug\Minesweeper.exe
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\Minesweeper\bin\Debug\Minesweeper.pdb
