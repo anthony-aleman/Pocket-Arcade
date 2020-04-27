@@ -405,7 +405,7 @@ namespace Minesweeper
 
         private void tile01_Click(object sender, EventArgs e)
         {
-            tile00.Image = Minesweeper.Properties.Resources.pressedtile;
+            tile01.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
             setMineImage(0, 1);
             checkTileScore(0, 1);
