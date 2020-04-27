@@ -19,6 +19,9 @@ namespace Minesweeper
      ************************************/
     public partial class Game : Form
     {
+        Tile tile = new Tile();
+        Mine mine = new Mine();
+
         int totaltile = 16;
         int minecount = 0 , checktiles = 0; //counts for mines and then check tiles
         int[,] button = new int [4,4];
@@ -46,17 +49,17 @@ namespace Minesweeper
                 {
                     if (rand.Next() % 2 != 0) //not mine
                     {
-                        isMine[i, j] = false;
+                        mine.SetFalse(i, j);
                     }
                     else
                     {
-                        isMine[i, j] = true;
-                        button[i, j] = 0;
-                        ++minecount;
+                        mine.SetTrue(i, j);
+                        tile.Set0(i, j);
+                        mine.addMine();
 
                         try
                         {
-                            addValues(i, j);
+                            tile.SetValues(i, j);
                         }
                         catch (IndexOutOfRangeException)
                         {
@@ -71,7 +74,7 @@ namespace Minesweeper
             
         }
 
-       private void addValues(int i, int j)
+       /*private void addValues(int i, int j)
           {
             //Body
             if ((i == 1 || i == 2) && (j == 1 || j == 2))//Positions {(2,2),(2,3),(3,2),(3,3)}
@@ -201,12 +204,12 @@ namespace Minesweeper
                     button[i, j - 1] += 1;
                 }
             }
-          }
+          }*/
 
-        private void checkMine(int i, int j)
+        private void setMineImage(int i, int j)
         {
 
-            if (isMine[i,j] == true)
+            if (mine.GetMine(i,j) == true)
             {
                 if (i == 0 && j == 0)
                 {
@@ -286,67 +289,67 @@ namespace Minesweeper
         {
             if (i == 0 && j == 0)
             {
-                tile00.Text = button[i, j].ToString();
+                tile00.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 0 && j == 1)
             {
-                tile01.Text = button[i, j].ToString();
+                tile01.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 0 && j == 2)
             {
-                tile02.Text = button[i, j].ToString();
+                tile02.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 0 && j == 3)
             {
-                tile03.Text = button[i, j].ToString(); ;
+                tile03.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 1 && j == 0)
             {
-                tile10.Text = button[i, j].ToString(); 
+                tile10.Text = tile.GetValue(i, j).ToString(); 
             }
             if (i == 1 && j == 1)
             {
-                tile11.Text = button[i, j].ToString();
+                tile11.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 1 && j == 2)
             {
-                tile12.Text = button[i, j].ToString();
+                tile12.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 2 && j == 2)
             {
-                tile22.Text = button[i, j].ToString();
+                tile22.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 2 && j == 1)
             {
-                tile21.Text = button[i, j].ToString();
+                tile21.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 2 && j == 0)
             {
-                tile20.Text = button[i, j].ToString();
+                tile20.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 1 && j == 3)
             {
-                tile13.Text = button[i, j].ToString();
+                tile13.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 2 && j == 3)
             {
-                tile23.Text = button[i, j].ToString();
+                tile23.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 3 && j == 0)
             {
-                tile30.Text = button[i, j].ToString();
+                tile30.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 3 && j == 1)
             {
-                tile31.Text = button[i, j].ToString();
+                tile31.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 3 && j == 2)
             {
-                tile32.Text = button[i, j].ToString();
+                tile32.Text = tile.GetValue(i, j).ToString();
             }
             if (i == 3 && j == 3)
             {
-                tile33.Text = button[i, j].ToString();
+                tile33.Text = tile.GetValue(i, j).ToString();
             }
         }
 
@@ -357,7 +360,6 @@ namespace Minesweeper
                 MessageBox.Show("You won!");
                 disableButtons();
             }
-            //disableButtons();
         }
 
         private void gameOver() // declares gameover
@@ -388,7 +390,7 @@ namespace Minesweeper
         {
             tile00.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(0, 0);
+            setMineImage(0, 0);
             checkTileScore(0, 0);
 
             if (!gameisOver)
@@ -405,7 +407,7 @@ namespace Minesweeper
         {
             tile00.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(0, 1);
+            setMineImage(0, 1);
             checkTileScore(0, 1);
 
             if (!gameisOver)
@@ -422,7 +424,7 @@ namespace Minesweeper
         {
             tile02.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(0, 2);
+            setMineImage(0, 2);
             checkTileScore(0, 2);
 
             if (!gameisOver)
@@ -439,7 +441,7 @@ namespace Minesweeper
         {
             tile03.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(0, 3);
+            setMineImage(0, 3);
             checkTileScore(0, 3);
 
             if (!gameisOver)
@@ -455,7 +457,8 @@ namespace Minesweeper
         private void tile10_Click(object sender, EventArgs e)
         {
             tile10.Image = Minesweeper.Properties.Resources.pressedtile;
-            checkMine(1, 0);
+            checkWinner();
+            setMineImage(1, 0);
             checkTileScore(1, 0);
 
             if (!gameisOver)
@@ -472,7 +475,7 @@ namespace Minesweeper
         {
             tile11.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(1, 1);
+            setMineImage(1, 1);
             checkTileScore(1, 1);
 
             if (!gameisOver)
@@ -489,7 +492,7 @@ namespace Minesweeper
         {
             tile12.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(1, 2);
+            setMineImage(1, 2);
             checkTileScore(1, 2);
 
             if (!gameisOver)
@@ -515,7 +518,7 @@ namespace Minesweeper
         {
             tile13.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(1, 3);
+            setMineImage(1, 3);
             checkTileScore(1, 3);
 
             if (!gameisOver)
@@ -532,7 +535,7 @@ namespace Minesweeper
         {
             tile20.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(2, 0);
+            setMineImage(2, 0);
             checkTileScore(2, 0);
 
             if (!gameisOver)
@@ -549,7 +552,7 @@ namespace Minesweeper
         {
             tile21.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(2, 1);
+            setMineImage(2, 1);
             checkTileScore(0, 0);
 
             if (!gameisOver)
@@ -566,7 +569,7 @@ namespace Minesweeper
         {
             tile22.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(2, 2);
+            setMineImage(2, 2);
             checkTileScore(2, 2);
 
             if (!gameisOver)
@@ -583,7 +586,7 @@ namespace Minesweeper
         {
             tile23.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(2, 3);
+            setMineImage(2, 3);
             checkTileScore(2, 3);
 
             if (!gameisOver)
@@ -600,7 +603,7 @@ namespace Minesweeper
         {
             tile30.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(3, 0);
+            setMineImage(3, 0);
             checkTileScore(3, 0);
 
             if (!gameisOver)
@@ -617,7 +620,7 @@ namespace Minesweeper
         {
             tile31.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(3, 1);
+            setMineImage(3, 1);
             checkTileScore(3, 1);
 
             if (!gameisOver)
@@ -634,7 +637,7 @@ namespace Minesweeper
         {
             tile32.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(3, 2);
+            setMineImage(3, 2);
             checkTileScore(3, 2);
 
             if (!gameisOver)
@@ -651,7 +654,7 @@ namespace Minesweeper
         {
             tile33.Image = Minesweeper.Properties.Resources.pressedtile;
             checkWinner();
-            checkMine(3, 3);
+            setMineImage(3, 3);
             checkTileScore(3, 3);
 
             if (!gameisOver)
