@@ -85,6 +85,7 @@
             this.tile0_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile0_3.TabIndex = 18;
             this.tile0_3.TabStop = false;
+            this.tile0_3.Click += new System.EventHandler(this.tile0_3_Click);
             // 
             // tile1_3
             // 
@@ -95,6 +96,7 @@
             this.tile1_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile1_3.TabIndex = 17;
             this.tile1_3.TabStop = false;
+            this.tile1_3.Click += new System.EventHandler(this.tile1_3_Click);
             // 
             // tile2_3
             // 
@@ -105,6 +107,7 @@
             this.tile2_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile2_3.TabIndex = 16;
             this.tile2_3.TabStop = false;
+            this.tile2_3.Click += new System.EventHandler(this.tile2_3_Click);
             // 
             // tile3_3
             // 
@@ -115,6 +118,7 @@
             this.tile3_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile3_3.TabIndex = 15;
             this.tile3_3.TabStop = false;
+            this.tile3_3.Click += new System.EventHandler(this.tile3_3_Click);
             // 
             // tile0_2
             // 
@@ -125,6 +129,7 @@
             this.tile0_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile0_2.TabIndex = 14;
             this.tile0_2.TabStop = false;
+            this.tile0_2.Click += new System.EventHandler(this.tile0_2_Click);
             // 
             // tile1_2
             // 
@@ -135,6 +140,7 @@
             this.tile1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile1_2.TabIndex = 13;
             this.tile1_2.TabStop = false;
+            this.tile1_2.Click += new System.EventHandler(this.tile1_2_Click_1);
             // 
             // tile2_2
             // 
@@ -145,6 +151,7 @@
             this.tile2_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile2_2.TabIndex = 12;
             this.tile2_2.TabStop = false;
+            this.tile2_2.Click += new System.EventHandler(this.tile2_2_Click);
             // 
             // tile3_2
             // 
@@ -155,6 +162,7 @@
             this.tile3_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile3_2.TabIndex = 11;
             this.tile3_2.TabStop = false;
+            this.tile3_2.Click += new System.EventHandler(this.tile3_2_Click);
             // 
             // tile3_1
             // 
@@ -165,6 +173,7 @@
             this.tile3_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile3_1.TabIndex = 10;
             this.tile3_1.TabStop = false;
+            this.tile3_1.Click += new System.EventHandler(this.tile3_1_Click);
             // 
             // tile0_1
             // 
@@ -175,6 +184,7 @@
             this.tile0_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile0_1.TabIndex = 9;
             this.tile0_1.TabStop = false;
+            this.tile0_1.Click += new System.EventHandler(this.tile0_1_Click);
             // 
             // tile2_1
             // 
@@ -196,6 +206,7 @@
             this.tile1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile1_1.TabIndex = 7;
             this.tile1_1.TabStop = false;
+            this.tile1_1.Click += new System.EventHandler(this.tile1_1_Click);
             // 
             // tile1_0
             // 
@@ -217,6 +228,7 @@
             this.tile2_0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile2_0.TabIndex = 5;
             this.tile2_0.TabStop = false;
+            this.tile2_0.Click += new System.EventHandler(this.tile2_0_Click);
             // 
             // tile3_0
             // 
@@ -227,6 +239,7 @@
             this.tile3_0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile3_0.TabIndex = 4;
             this.tile3_0.TabStop = false;
+            this.tile3_0.Click += new System.EventHandler(this.tile3_0_Click);
             // 
             // tile0_0
             // 
@@ -237,6 +250,7 @@
             this.tile0_0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile0_0.TabIndex = 3;
             this.tile0_0.TabStop = false;
+            this.tile0_0.Click += new System.EventHandler(this.tile0_0_Click);
             // 
             // pictureBox1
             // 

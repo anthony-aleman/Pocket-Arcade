@@ -159,6 +159,9 @@ namespace mainmainmenu
             }
         }
 
-
+        public int GetTotoalTiles()
+        {
+            return totaltiles;
+        }
     }
 }
