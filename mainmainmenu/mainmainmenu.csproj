@@ -52,6 +52,7 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mine.cs" />
     <Compile Include="MinesweeperGameScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +96,7 @@
     </Compile>
     <Compile Include="SnakeInput.cs" />
     <Compile Include="SnakeSettings.cs" />
+    <Compile Include="Tile.cs" />
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>

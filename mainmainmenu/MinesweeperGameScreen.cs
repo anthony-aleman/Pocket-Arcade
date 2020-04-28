@@ -12,6 +12,8 @@ namespace mainmainmenu
 {
     public partial class MinesweeperGameScreen : Form
     {
+        Tile Tile = new Tile();
+        Mine Mine = new Mine();
         public MinesweeperGameScreen()
         {
             InitializeComponent();
