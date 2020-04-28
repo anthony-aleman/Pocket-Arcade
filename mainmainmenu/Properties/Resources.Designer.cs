@@ -130,6 +130,16 @@ namespace mainmainmenu.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gamebutton {
+            get {
+                object obj = ResourceManager.GetObject("gamebutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream GameOver {
@@ -281,9 +291,9 @@ namespace mainmainmenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mine_coloredBackground {
+        internal static System.Drawing.Bitmap mine_21 {
             get {
-                object obj = ResourceManager.GetObject("Mine_coloredBackground", resourceCulture);
+                object obj = ResourceManager.GetObject("mine 21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -531,6 +541,16 @@ namespace mainmainmenu.Properties {
         internal static System.Drawing.Bitmap settings {
             get {
                 object obj = ResourceManager.GetObject("settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tile {
+            get {
+                object obj = ResourceManager.GetObject("tile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

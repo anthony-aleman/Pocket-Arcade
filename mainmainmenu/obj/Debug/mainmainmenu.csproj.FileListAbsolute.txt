@@ -20,3 +20,5 @@ C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\ma
 C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.PacManGameScreen.resources
 C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.PacManOptions.resources
 C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.SnakeGame.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.MinesweeperMenu.resources
+C:\Users\antho\OneDrive\Documents\GitHub\Pocket-Arcade\mainmainmenu\obj\Debug\mainmainmenu.MinesweeperGameScreen.resources

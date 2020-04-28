@@ -10,23 +10,26 @@ using System.Windows.Forms;
 
 namespace mainmainmenu
 {
-    public partial class MinesweeperMenu : Form
+    public partial class MinesweeperGameScreen : Form
     {
-        public MinesweeperMenu()
+        public MinesweeperGameScreen()
         {
             InitializeComponent();
         }
 
-        private void Play_button_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            MinesweeperGameScreen minesweeperGame = new MinesweeperGameScreen();
-            minesweeperGame.Show();
 
         }
 
-        private void Exit_button_Click(object sender, EventArgs e)
+        private void tile1_2_Click(object sender, EventArgs e)
         {
-            Close();
+
+        }
+
+        private void tile1_0_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

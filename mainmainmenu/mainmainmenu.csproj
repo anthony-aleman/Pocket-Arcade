@@ -52,6 +52,12 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MinesweeperGameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinesweeperGameScreen.Designer.cs">
+      <DependentUpon>MinesweeperGameScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="PacManMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     <Compile Include="SnakeSettings.cs" />
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinesweeperGameScreen.resx">
+      <DependentUpon>MinesweeperGameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinesweeperMenu.resx">
+      <DependentUpon>MinesweeperMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PacManMenu.resx">
       <DependentUpon>PacManMenu.cs</DependentUpon>
@@ -233,6 +245,7 @@
     <None Include="Resources\MuteSound.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\tile.png" />
     <None Include="Resources\pacman_chomp.wav" />
     <None Include="Resources\pacman_beginning.wav" />
     <None Include="Resources\pacman_death.wav" />
@@ -246,6 +259,8 @@
     <None Include="Resources\NicePng_lightning-bolt-png_64913.png" />
     <None Include="Resources\eatSound.wav" />
     <None Include="Resources\GameOver.wav" />
+    <None Include="Resources\mine 21.jpg" />
+    <None Include="Resources\gamebutton.jpg" />
     <Content Include="Resources\Sound\pacman_beginning.wav" />
     <Content Include="Resources\Sound\pacman_chomp.wav" />
   </ItemGroup>
