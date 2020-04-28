@@ -13,7 +13,13 @@ namespace mainmainmenu
 
         public Mine()
         {
-            Array.Clear(isMine, 0, isMine.Length);
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    this.isMine[i, j] = false;
+                }
+            }
             this.minecount = 0;
         }
 
@@ -27,7 +33,7 @@ namespace mainmainmenu
         }
         public bool GetMine(int i, int j)
         {
-            return isMine[i, j];
+            return this.isMine[i, j];
         }
         public void addMine()
         {

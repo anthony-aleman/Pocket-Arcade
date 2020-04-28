@@ -9,12 +9,20 @@ namespace mainmainmenu
     class Tile
     {
         private int[,] tile = new int[4, 4];
-        private int totaltiles;
+        private int totalTiles;
+        private int checkedTiles;
 
         public Tile()
         {
-            Array.Clear(tile, 0, tile.Length);
-            this.totaltiles = 16;
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    this.tile[i, j] = 0;
+                }
+            }
+            this.totalTiles = 16;
+            this.checkedTiles = 0;
         }
 
         public void Set0(int i, int j)
@@ -36,37 +44,37 @@ namespace mainmainmenu
                 {
                     this.tile[i + 1, j] += 1;
                 }
-                if (mine.GetMine(i - 1, j) == false)
+                else if (mine.GetMine(i - 1, j) == false)
                 {
                     this.tile[i - 1, j] += 1;
                 }
-                if (mine.GetMine(i, j + 1) == false)
+                else if (mine.GetMine(i, j + 1) == false)
                 {
                     this.tile[i, j + 1] += 1;
                 }
-                if (mine.GetMine(i, j - 1) == false)
+                else if (mine.GetMine(i, j - 1) == false)
                 {
                     this.tile[i, j - 1] += 1;
                 }
             }
             //Left 
-            if (i == 0 && (j == 1 || j == 2))//Positions {(1,2),(1, 3)}
+            else if (i == 0 && (j == 1 || j == 2))//Positions {(1,2),(1, 3)}
             {
                 if (mine.GetMine(i + 1, j) == false)
                 {
                     this.tile[i + 1, j] += 1;
                 }
-                if (mine.GetMine(i, j - 1) == false)
+                else if (mine.GetMine(i, j - 1) == false)
                 {
                     this.tile[i, j - 1] += 1;
                 }
-                if (mine.GetMine(i, j + 1) == false)
+                else if (mine.GetMine(i, j + 1) == false)
                 {
                     this.tile[i, j + 1] += 1;
                 }
             }
             //Right
-            if (i == 3 && (j == 1 || j == 2))//Positions {(4,2),(4,3)}
+            else if (i == 3 && (j == 1 || j == 2))//Positions {(4,2),(4,3)}
             {
                 if (mine.GetMine(i - 1, j) == false)
                 {
@@ -82,7 +90,7 @@ namespace mainmainmenu
                 }
             }
             //Top
-            if ((i == 1 || i == 2) && j == 0)//Positions {(2, 1)(3,1)}
+            else if ((i == 1 || i == 2) && j == 0)//Positions {(2, 1)(3,1)}
             {
                 if (mine.GetMine(i + 1, j) == false)
                 {
@@ -97,7 +105,7 @@ namespace mainmainmenu
                     this.tile[i, j + 1] += 1;
                 }
             }
-            if ((i == 1 || i == 2) && (j == 3))//Position {(2,4),(3,4)}
+            else if ((i == 1 || i == 2) && (j == 3))//Position {(2,4),(3,4)}
             {
                 if (mine.GetMine(i + 1, j) == false)
                 {
@@ -113,7 +121,7 @@ namespace mainmainmenu
                 }
             }
             //Corners
-            if ((i == 0 && j == 0))// Position {(1,1)}
+            else if ((i == 0 && j == 0))// Position {(1,1)}
             {
                 if (mine.GetMine(i + 1, j) == false)
                 {
@@ -124,7 +132,7 @@ namespace mainmainmenu
                     this.tile[i + 1, j] += 1;
                 }
             }
-            if ((i == 0 && j == 3))//Position {1,4)}
+            else if ((i == 0 && j == 3))//Position {1,4)}
             {
                 if (mine.GetMine(i - 1, j) == false)
                 {
@@ -135,7 +143,7 @@ namespace mainmainmenu
                     this.tile[i, j - 1] += 1;
                 }
             }
-            if ((i == 3 && j == 0))//Postion {(4,1)}
+            else if ((i == 3 && j == 0))//Postion {(4,1)}
             {
                 if (mine.GetMine(i - 1, j) == false)
                 {
@@ -146,7 +154,7 @@ namespace mainmainmenu
                     this.tile[i, j + 1] += 1;
                 }
             }
-            if ((i == 3 && j == 3))//Position {(4,4)}
+            else if ((i == 3 && j == 3))//Position {(4,4)}
             {
                 if (mine.GetMine(i - 1, j) == false)
                 {
@@ -159,9 +167,19 @@ namespace mainmainmenu
             }
         }
 
-        public int GetTotoalTiles()
+        public int GetTotalTiles()
         {
-            return totaltiles;
+            return totalTiles;
+        }
+
+        public int GetCheckedTiles()
+        {
+            return this.checkedTiles;
+        }
+
+        public void AddCheckedTile()
+        {
+            ++checkedTiles;
         }
     }
 }

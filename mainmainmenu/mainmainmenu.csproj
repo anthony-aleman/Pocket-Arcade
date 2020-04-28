@@ -263,6 +263,11 @@
     <None Include="Resources\GameOver.wav" />
     <None Include="Resources\mine 21.jpg" />
     <None Include="Resources\gamebutton.jpg" />
+    <None Include="Resources\pressedtile.png" />
+    <None Include="Resources\emptytile_1.png" />
+    <None Include="Resources\emptytile_2.png" />
+    <None Include="Resources\emptytile_3.png" />
+    <None Include="Resources\emptytile_4.png" />
     <Content Include="Resources\Sound\pacman_beginning.wav" />
     <Content Include="Resources\Sound\pacman_chomp.wav" />
   </ItemGroup>

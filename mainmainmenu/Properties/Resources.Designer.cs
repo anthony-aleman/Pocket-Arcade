@@ -132,6 +132,46 @@ namespace mainmainmenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap emptytile_1 {
+            get {
+                object obj = ResourceManager.GetObject("emptytile_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emptytile_2 {
+            get {
+                object obj = ResourceManager.GetObject("emptytile_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emptytile_3 {
+            get {
+                object obj = ResourceManager.GetObject("emptytile_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emptytile_4 {
+            get {
+                object obj = ResourceManager.GetObject("emptytile_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gamebutton {
             get {
                 object obj = ResourceManager.GetObject("gamebutton", resourceCulture);
@@ -481,6 +521,16 @@ namespace mainmainmenu.Properties {
         internal static System.Drawing.Bitmap Pacman_moving_up {
             get {
                 object obj = ResourceManager.GetObject("Pacman moving up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pressedtile {
+            get {
+                object obj = ResourceManager.GetObject("pressedtile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

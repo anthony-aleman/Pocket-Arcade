@@ -45,7 +45,7 @@
             this.tile2_0 = new System.Windows.Forms.PictureBox();
             this.tile3_0 = new System.Windows.Forms.PictureBox();
             this.tile0_0 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.NewGame_Button = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tile0_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile1_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile2_3)).BeginInit();
@@ -62,7 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tile2_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile3_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile0_0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NewGame_Button)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -195,7 +195,7 @@
             this.tile2_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tile2_1.TabIndex = 8;
             this.tile2_1.TabStop = false;
-            this.tile2_1.Click += new System.EventHandler(this.tile1_2_Click);
+            this.tile2_1.Click += new System.EventHandler(this.tile2_1_Click);
             // 
             // tile1_1
             // 
@@ -252,15 +252,16 @@
             this.tile0_0.TabStop = false;
             this.tile0_0.Click += new System.EventHandler(this.tile0_0_Click);
             // 
-            // pictureBox1
+            // NewGame_Button
             // 
-            this.pictureBox1.Image = global::mainmainmenu.Properties.Resources.gamebutton;
-            this.pictureBox1.Location = new System.Drawing.Point(245, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.NewGame_Button.Image = global::mainmainmenu.Properties.Resources.gamebutton;
+            this.NewGame_Button.Location = new System.Drawing.Point(245, 12);
+            this.NewGame_Button.Name = "NewGame_Button";
+            this.NewGame_Button.Size = new System.Drawing.Size(85, 85);
+            this.NewGame_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NewGame_Button.TabIndex = 2;
+            this.NewGame_Button.TabStop = false;
+            this.NewGame_Button.Click += new System.EventHandler(this.NewGame_Button_Click);
             // 
             // MinesweeperGameScreen
             // 
@@ -283,7 +284,7 @@
             this.Controls.Add(this.tile2_0);
             this.Controls.Add(this.tile3_0);
             this.Controls.Add(this.tile0_0);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.NewGame_Button);
             this.Controls.Add(this.label1);
             this.Name = "MinesweeperGameScreen";
             this.Text = "MinesweeperGameScreen";
@@ -303,7 +304,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tile2_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile3_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tile0_0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NewGame_Button)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,7 +313,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox NewGame_Button;
         private System.Windows.Forms.PictureBox tile0_0;
         private System.Windows.Forms.PictureBox tile3_0;
         private System.Windows.Forms.PictureBox tile2_0;

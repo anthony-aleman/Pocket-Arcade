@@ -63,10 +63,8 @@ namespace mainmainmenu
 
         private void PacManGameScreen_KeyDown(object sender, KeyEventArgs e)
         {
-            //Sound of pac man moving
+            
 
-            SoundPlayer movingSound = new SoundPlayer(Properties.Resources.pacman_chomp);
-            movingSound.Play();
             switch (e.KeyCode)
             {
                 case Keys.Left:
